@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>imagine.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/images/undraw_investing_7u74.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg py-3 sticky-top spacing " id="navbar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="index.html">imagine</a>
+        <!-- On Computer Device  -->
+        <div id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link  " aria-current="page" href="#hero-section"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#imagine-features">
+                Features
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >About Us</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- On Computer Device  -->
+
+        <!-- On Mobile Device  -->
+        <span class="navbar-toggler-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+         <div class="offcanvas-header">
+           <h5 id="offcanvasRightLabel">
+             <a class="navbar-brand" style="font-size: 1.30rem;" href="index.html">imagine</a>
+           </h5>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body">
+           <ul class="custom-ul">
+             <li><a class="custom-link-2" href="index.html">Home</a></li>
+             <li><a class="custom-link-2" href="">Features</a></li>
+             <li class="dropdown">
+               <a href="#" class="custom-link-2">About Us &#9662;</a>
+               <ul class="dropdown-content">
+                 <li><a class="custom-link" href="#">More Free Templates</a></li>
+                 <li><a class="custom-link" href="#">Our Team</a></li>
+                 <hr />
+                 <li><a class="custom-link" href="#">Our Links</a></li>
+               </ul>
+             </li>
+             <li><a href="" class="custom-link-2">Testimonials</a></li>
+             <li><a href="" class="custom-link-2">Blog</a></li>
+             <li><a href="" class="custom-link-2">Contact</a></li>
+           </ul>
+         </div>
+       </div>
+        <!-- On Mobile Device  -->
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section spacing" id="hero-section">
+      <div class="container d-flex align-items-center pt-md-5">
+        <div class="">
+          <h1 class="profitable-business display-5">Make Your Business More Profitable.</h1>
+          <p class="dummy-text py-2 col-lg-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+          <button class="btn btn-primary rounded-pill" onclick="openmodal()">Get Started</button>
+        </div>
+        <div class="order-md-1">
+          <img class="img-fluid" src="assets/images/vectors/investing.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section -->
+
+    <!-- Imagine Features -->
+    <section data-aos="fade-up"  class="container imagine-features spacing" id="imagine-features">
+      <div class="container" >
+          <div class="col-12 text-center" >
+            <h1 class="imagine-features-heading" >Imagine Features</h1>
+            <p class="py-1 imagine-features-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero.</p>
+          </div>
+          <div data-aos="fade-up">
+            <div class="container">
+              <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="custom-card text-center">
+                              <i class="fas fa-solid fa-rotate fa-2x"></i>
+                              <h5 class="card-heading">Marketing Consulting</h5>
+                              <p class="card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                              <a href="#" class="Learn-more">Learn More</a>
+                            </div>
+                          </div>
+          
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="custom-card text-center">
+                              <i class="fas fa-solid fa-shop fa-2x"></i>
+                              <h5 class="card-heading">Market Analysis</h5>
+                              <p class="card-paragraph">Lorem ipsum dolor sit amet consectetur  adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                              <a href="#" class="Learn-more">Learn More</a>
+                            </div>
+                          </div>
+                          
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="custom-card text-center">
+                              <i class="fas fa-solid fa-cart-shopping fa-2x"></i>
+                              <h5 class="card-heading">Easy Purchase</h5>
+                              <p class="card-paragraph">Lorem ipsum dolor sit amet consectetur  adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                              <a href="#" class="Learn-more">Learn More</a>
+                            </div>
+                          </div>
+                          
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="custom-card text-center d">
+                              <i class="fas fa-solid fa-pen-to-square fa-2x"></i>
+                              <h5 class="card-heading">Free Updates</h5>
+                              <p class="card-paragraph">Lorem ipsum dolor sit amet consectetur  adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                              <a href="#" class="Learn-more">Learn More</a>
+                            </div>
+                          </div>
+          
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="custom-card text-center">
+                              <i class="fas fa-regular fa-face-smile fa-2x"></i>
+                              <h5 class="card-heading">100% Satistified</h5>
+                              <p class="card-paragraph">Lorem ipsum dolor sit amet consectetur  adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                              <a href="#" class="Learn-more">Learn More</a>
+                            </div>
+                          </div>
+          
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="custom-card text-center">
+                              <i class="fas fa-solid fa-plug fa-2x"></i>
+                              <h5 class="card-heading">Easy Plugin</h5>
+                              <p class="card-paragraph">Lorem ipsum dolor sit amet consectetur  adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                              <a href="#" class="Learn-more">Learn More</a>
+                            </div>
+                          </div>
+          
+                        </div>
+                          </div> 
+                        </div>
+                      </div>
+    </section>
+    <!-- Imagine Features -->
+
+    <!-- Communicate & Gather Feedback -->
+  <section class="communicate-container spacing">
+    <div class="container">
+      <div class="row grid">
+        <div class="col-lg-7">
+            <div data-aos="fade-right">
+            <img src="assets/images/vectors/gift card.svg" class="img-fluid" alt="">
+          </div>
+          </div>
+        <div class="col-lg-5 py-5 card-heading communicate-">
+          <h1 class="communicate-heading">Communicate and gather feedback</h1>
+          <p class="communicate-paragraph col-lg-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div data-aos="fade-left">
+
+            <div class="communicate-card col-lg-10">
+              <div class="d-flex gap-4">
+                <div>
+                  <img src="assets/images/card images/person_4.jpg.png" class="person_4" alt="">
+                </div>
+                <div>
+                  <h6>Grey Simpson</h6>
+                <h6>Co-Founder, XYZ Inc</h6>
+              </div>
+            </div>
+              <p class="communicate-card-paragraph col-lg-12">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+  </section>
+    <!-- Communicate & Gather Feedback -->
+
+    <!-- Communicate & Gather Feedback 2 -->
+  <section class="communicate-container spacing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 order-lg-2 order-1">
+          <div data-aos="fade-left">
+            <img src="assets/images/vectors/metrics.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 py-5 order-lg-1 order-2">
+          <h1 class="communicate-heading">Communicate and gather feedback</h1>
+          <p class="communicate-paragraph col-lg-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div data-aos="fade-right">
+            <div class="communicate-card col-lg-10">
+              <div class="d-flex gap-4">
+                <div>
+                  <img src="assets/images/card images/person_1.jpg.png" class="person_4" alt="">
+                </div>
+                <div>
+                  <h6>Kipberly Gush</h6>
+                  <h6>Co-Founder, XYZ Inc</h6>
+                </div>
+              </div>
+              <p class="communicate-card-paragraph col-lg-12">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Communicate & Gather Feedback 2 -->
+
+    <!-- Communicate & Gather Feedback 3 -->
+    <section class="communicate-container spacing">
+    <div class="container">
+      <div class="row grid">
+        <div class="col-lg-7">
+            <div data-aos="fade-right">
+            <img src="assets/images/vectors/gift card.svg" class="img-fluid" alt="">
+          </div>
+          </div>
+        <div class="col-lg-5 py-5 card-heading communicate-">
+          <h1 class="communicate-heading">Communicate and gather feedback</h1>
+          <p class="communicate-paragraph col-lg-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div data-aos="fade-left">
+            <div class="communicate-card col-lg-10">
+              <div class="d-flex gap-4">
+                <div>
+                  <img src="assets/images/card images/person_4.jpg.png" class="person_4" alt="">
+                </div>
+                <div>
+                  <h6>Grey Simpson</h6>
+                <h6>Co-Founder, XYZ Inc</h6>
+              </div>
+            </div>
+              <p class="communicate-card-paragraph col-lg-12">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+  </section>
+    <!-- Communicate & Gather Feedback 3 -->
+
+    <!-- Communicate & Gather Feedback 4 -->
+  <section class="communicate-container spacing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 order-lg-2 order-1">
+          <div data-aos="fade-left">
+            <img src="assets/images/vectors/metrics.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 py-5 order-lg-1 order-2">
+          <h1 class="communicate-heading">Communicate and gather feedback</h1>
+          <p class="communicate-paragraph col-lg-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div data-aos="fade-right">
+            <div class="communicate-card col-lg-10">
+              <div class="d-flex gap-4">
+                <div>
+                  <img src="assets/images/card images/person_1.jpg.png" class="person_4" alt="">
+                </div>
+                <div>
+                  <h6>Kipberly Gush</h6>
+                  <h6>Co-Founder, XYZ Inc</h6>
+                </div>
+              </div>
+              <p class="communicate-card-paragraph col-lg-12">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Communicate & Gather Feedback 4 -->
+  
+    <!-- About Us -->
+  <section class="about-us spacing">
+    <div class="container">
+      <h1 class="about-us-heading text-center">About Us</h1>
+      <div class="row">
+        <div class="col-lg-5 col-md-12 text-center" data-aos="fade-right">
+          <img src="assets/images/vectors/about us.svg" class="img-fluid bookmarks mt-5" alt="">
+        </div>
+        <div class="col-lg-6 col-md-12 py-5 mt-4 our-mission">
+          <h3 class="about-us-heading">Our Mission</h3>
+          <p class="about-us-paragraph mt-3">Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.</p>
+          <div class="d-flex align-items-center gap-3 py-2">
+            <i class="fa-solid fa-check"></i>
+            <span class="about-us-paragraph">Laborum enim quasi at modi</span>
+          </div>
+          <div class="d-flex align-items-center gap-3 py-2">
+            <i class="fa-solid fa-check"></i>
+            <span class="about-us-paragraph">Laborum enim quasi at modi</span>
+          </div>
+          <div class="d-flex align-items-center gap-3 py-2">
+            <i class="fa-solid fa-check"></i>
+            <span class="about-us-paragraph">Laborum enim quasi at modi</span>
+          </div>
+          <button class="btn btn-primary rounded-pill mt-4" onclick="openmodal()">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- About Us -->
+
+    <!-- Our Team  -->
+  <section class="py-5 mt-3 container">
+    <div class="text-center our-team" data-aos="fade-up">
+      <h1 class="our-team-heading">Our Team</h1>
+      <p class="py-2 our-team-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero.</p>
+    </div>
+    <div class="spacing pt-4">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+          <div class="card">
+            <div class="card-body">
+              <div class="image-container">
+                <img src="assets/images/our team/our-team-1.webp" class="img-fluid card-image" alt="...">
+                <div class="social-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <h5 class="card-title pt-4 our-team-card-heading">Cloe Marena</h5>
+              <p class="pt-1 our-team-card-subtitle">PRESIDENT</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+          <div class="card">
+            <div class="card-body">
+              <div class="image-container">
+                <img src="assets/images/our team/our-team-2.webp" class="img-fluid card-image" alt="...">
+                <div class="social-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <h5 class="card-title pt-4 our-team-card-heading">Cloe Marena</h5>
+              <p class="pt-1 our-team-card-subtitle">PRESIDENT</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+          <div class="card">
+            <div class="card-body">
+              <div class="image-container">
+                <img src="assets/images/our team/our-team-3.webp" class="img-fluid card-image" alt="...">
+                <div class="social-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <h5 class="card-title pt-4 our-team-card-heading">Cloe Marena</h5>
+              <p class="pt-1 our-team-card-subtitle">PRESIDENT</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+          <div class="card">
+            <div class="card-body">
+              <div class="image-container">
+                <img src="assets/images/our team/our-team-4.webp" class="img-fluid card-image" alt="...">
+                <div class="social-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <h5 class="card-title pt-4 our-team-card-heading">Cloe Marena</h5>
+              <p class="pt-1 our-team-card-subtitle">PRESIDENT</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+          <div class="card">
+            <div class="card-body">
+              <div class="image-container">
+                <img src="assets/images/our team/our-team-5.webp" class="img-fluid card-image" alt="...">
+                <div class="social-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <h5 class="card-title pt-4 our-team-card-heading">Cloe Marena</h5>
+              <p class="pt-1 our-team-card-subtitle">PRESIDENT</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+          <div class="card">
+            <div class="card-body">
+              <div class="image-container">
+                <img src="assets/images/our team/our-team-6.webp" class="img-fluid card-image" alt="...">
+                <div class="social-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <h5 class="card-title pt-4 our-team-card-heading">Cloe Marena</h5>
+              <p class="pt-1 our-team-card-subtitle">PRESIDENT</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Our Team  -->
+
+    <!-- Modal  -->
+  <section class="custom-modal" id="customModal" style="display: none;">
+    <div class="modal-content">
+      <form>
+        <div class="d-flex align-items-center justify-content-between pb-3">
+          <a class="navbar-brand" href="index.html">imagine</a>
+          <i class="fa-solid fa-xmark" onclick="closemodal()"></i>
+        </div>
+        <div class="pb-3">
+        <label for="email" class="form-label">Email address : </label>
+        <input type="email" class="form-control" placeholder="email"  >
+      </div>
+      <div class="pb-3">
+        <label for="password" class="form-label">Password : </label>
+        <input type="password" class="form-control" placeholder="password" >
+      </div>
+      <div class="pb-3">
+        <label for="password" class="form-label">Retype password : </label>
+        <input type="password" class="form-control" placeholder="retype password">
+      </div>
+      <div class="pb-4">
+        <label class="form-label">Phone nupber : </label>
+        <input type="password" class="form-control" placeholder="phone number" >
+      </div>
+      <button type="submit" class="btn btn-secondary col-12">SUBMIT</button>
+    </form>
+  </div>
+  </section>
+    <!-- Modal  -->
+
+    <!-- Testimonial  -->
+  <section class="testimonial">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-12 text-center">
+                <div id="slide-1" class="slide">
+                    <img src="assets/images/testimonial/testimonial 1.png" class="pb-4 testimonial-image img-fluid rounded-pill" alt="">
+                    <h4 class="pb-3 testimonial-heading pt-3">Cloe Marena</h4>
+                    <p class="testimonial-paragraph">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia aliquid consequuntur expedita aspernatur, in ipsam? Nam dolore eius illum, dolorem rem exercitationem ut voluptas libero modi corporis, eligendi tenetur dolores adipisci eum sequi harum omnis. Iure veritatis tempora qui consequatur? Assumenda quae illo eveniet voluptates odio a tempora quod."</p>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center">
+              <div id="slide-2" class="slide">
+                  <img src="assets/images/testimonial/testimonial 2.png" class="pb-4 img-fluid rounded-pill" alt="">
+                  <h4 class="pb-3 testimonial-heading pt-3">John Rooster</h4>
+                  <p class="testimonial-paragraph pb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia aliquid consequuntur expedita aspernatur, in ipsam? Nam dolore eius illum, dolorem rem exercitationem ut voluptas libero modi corporis, eligendi tenetur dolores adipisci eum sequi harum omnis. Iure veritatis tempora qui consequatur? Assumenda quae illo eveniet voluptates odio a tempora quod."</p>
+              </div>
+          </div>
+          <div class="col-lg-12 text-center">
+            <div id="slide-3" class="slide">
+                <img src="assets/images/testimonial/testimonial 3.png" class="pb-4 image-fluid rounded-pill" alt="">
+                <h4 class="pb-3 testimonial-heading pt-3">Will Turner</h4>
+                <p class="testimonial-paragraph pb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia aliquid consequuntur expedita aspernatur, in ipsam? Nam dolore eius illum, dolorem rem exercitationem ut voluptas libero modi corporis, eligendi tenetur dolores adipisci eum sequi harum omnis. Iure veritatis tempora qui consequatur? Assumenda quae illo eveniet voluptates odio a tempora quod."</p>
+            </div>
+        </div>
+        <div class="col-lg-12 text-center">
+          <div id="slide-4" class="slide">
+              <img src="assets/images/testimonial/testimonial 4.png" class="pb-4 image-fluid rounded-pill" alt="">
+              <h4 class="pb-3 testimonial-heading pt-3">Nicolas Stainer</h4>
+              <p class="testimonial-paragraph pb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia aliquid consequuntur expedita aspernatur, in ipsam? Nam dolore eius illum, dolorem rem exercitationem ut voluptas libero modi corporis, eligendi tenetur dolores adipisci eum sequi harum omnis. Iure veritatis tempora qui consequatur? Assumenda quae illo eveniet voluptates odio a tempora quod."</p>
+          </div>
+      </div>
+      <div class="col-lg-12 text-center">
+        <div id="slide-5" class="slide">
+            <img src="assets/images/testimonial/testimonial 5.png" class="pb-4 image-fluid rounded-pill" alt="">
+            <h4 class="pb-3 testimonial-heading pt-3">George Brook</h4>
+            <p class="testimonial-paragraph pb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia aliquid consequuntur expedita aspernatur, in ipsam? Nam dolore eius illum, dolorem rem exercitationem ut voluptas libero modi corporis, eligendi tenetur dolores adipisci eum sequi harum omnis. Iure veritatis tempora qui consequatur? Assumenda quae illo eveniet voluptates odio a tempora quod."</p>
+        </div>
+    </div>
+      <div class="col-lg-12 text-center">
+        <div id="slide-6" class="slide">
+            <img src="assets/images/testimonial/testimonial 6.png" class="pb-4 image-fluid rounded-pill" alt="">
+            <h4 class="pb-3 testimonial-heading pt-3">Emely Hopson</h4>
+            <p class="testimonial-paragraph pb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia aliquid consequuntur expedita aspernatur, in ipsam? Nam dolore eius illum, dolorem rem exercitationem ut voluptas libero modi corporis, eligendi tenetur dolores adipisci eum sequi harum omnis. Iure veritatis tempora qui consequatur? Assumenda quae illo eveniet voluptates odio a tempora quod."</p>
+        </div>
+    </div>
+            <div class="col-lg-12 d-flex pt-3 justify-content-center gap-4">
+                <span class="slides-icon" onclick="showSlide(1)"></span>
+                <span class="slides-icon" onclick="showSlide(2)"></span>
+                <span class="slides-icon" onclick="showSlide(3)"></span>
+                <span class="slides-icon" onclick="showSlide(4)"></span>
+                <span class="slides-icon" onclick="showSlide(5)"></span>
+                <span class="slides-icon" onclick="showSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Testimonial  -->
+
+    <!-- Blog Post -->
+<section class="our-team container">
+  <div class="text-center pt-5 mt-5" data-aos="fade-up">
+    <h1 class="our-team-heading">Blog Posts</h1>
+  </div>
+  <div class="spacing pt-5">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets/images/blog post/blog post 1.webp" class="img-fluid card-image" alt="...">
+            <h5 class="card-title pt-4 our-team-card-heading">Make Your Business More Profitable</h5>
+            <ul class="d-flex align-items-center news-container pt-3">
+              <li class="news-heading">Ham Brook</li>
+              <li class="date">Jan 18, 2019</li>
+              <li class="news">News</li>
+            </ul>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            <p class="our-team-card-subtitle">Continue Reading....</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets/images/blog post/blog post 2.webp" class="img-fluid card-image" alt="...">
+            <h5 class="card-title pt-4 our-team-card-heading">Make Your Business More Profitable</h5>
+            <ul class="d-flex align-items-center news-container pt-3">
+              <li class="news-heading">Ham Brook</li>
+              <li class="date">Jan 18, 2019</li>
+              <li class="news">News</li>
+            </ul>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            <p class="our-team-card-subtitle">Continue Reading....</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-5" data-aos="fade-up">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets/images/blog post/blog post 3.webp" class="img-fluid card-image" alt="...">
+            <h5 class="card-title pt-4 our-team-card-heading">Make Your Business More Profitable</h5>
+            <ul class="d-flex align-items-center news-container pt-3">
+              <li class="news-heading">Ham Brook</li>
+              <li class="date">Jan 18, 2019</li>
+              <li class="news">News</li>
+            </ul>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            <p class="our-team-card-subtitle">Continue Reading....</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Blog Post -->
+
+    <!-- Contact Us -->
+<section class="contact-us mb-4">
+  <div class="d-flex justify-content-center align-items-center flex-column container">
+    <h1 class="text-center pb-5 contact-us-heading">Contact Us</h1>
+    <form class="contact-us-form col-lg-7 col-12">
+    <h4 class="pb-4 form-heading">Contact Form</h4>
+      <div class="pb-3">
+        <label class="form-label">First Name</label>
+        <input type="email" class="form-control"  aria-describedby="emailHelp">
+      </div>
+      <div class="pb-3">
+        <label class="form-label">Last Name</label>
+      <input type="password" class="form-control" >
+      </div>
+    <div class="pb-3">
+      <label class="form-label">Email</label>
+      <input type="password" class="form-control" >
+    </div>
+    <div class="pb-3">
+      <label class="form-label">Subject</label>
+      <input type="password" class="form-control" >
+    </div>
+    <div class="pb-3">
+      <label class="form-label">Message</label>
+      <textarea class="form-control" cols="60" rows="10"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary rounded-pill">Send Message</button>
+  </form>
+</div>
+</section>
+    <!-- Contact Us -->
+
+    <!-- Footer  -->
+<section class="footer pt-5">
+  <footer class="text-center pt-5">
+    <div class="d-flex align-items-center justify-content-center gap-5">
+      <i class="fa-brands fa-facebook-f fa-2x"></i>
+      <i class="fa-brands fa-twitter  fa-2x"></i>
+      <i class="fa-brands fa-instagram  fa-2x"></i>
+      <i class="fa-brands fa-pinterest  fa-2x"></i>
+    </div>
+    <p class="pt-5 pb-4 copyright">Copyright ©2023 All rights reserved | This template is made with <span><i class="fa-solid fa-heart"></i></span>  by <span class="colorlib">Colorlib...</span></p>
+  </footer>
+</section>
+    <!-- Footer  -->
+
+  <script src="assets/js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </body>
+</html>

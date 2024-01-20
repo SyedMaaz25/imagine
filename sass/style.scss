@@ -1,0 +1,552 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$primary-color: #4285f4;
+$secondary-color: #fff;
+$text-color: #808080;
+$accent: #000;
+$primary-font: "montserrat";
+$secondary-font: "roboto";
+$accent-font: "roboto-light";
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../assets/fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url(../assets/fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "roboto-light-italic";
+  src: url(../assets/fonts/roboto/Roboto-LightItalic.ttf);
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: none;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  font-family: $secondary-font;
+}
+
+.btn-secondary {
+  background-color: $accent;
+  border: none;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  font-family: $primary-font;
+  transition: all 0.4s ease-in;
+  &:hover {
+    background-color: $secondary-color;
+    color: $accent;
+    border: 1px solid $accent;
+  }
+}
+
+.navbar-nav .nav-item .nav-link {
+  margin-right: 1.3rem;
+  color: $accent;
+  font-size: 0.95rem;
+  font-family: $secondary-font;
+  &:hover,
+  :active {
+    color: $primary-color;
+  }
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: $secondary-font;
+  &::after {
+    content: ".";
+    color: $primary-color;
+  }
+}
+
+.navbar-toggler-icon {
+  display: none;
+}
+
+.offcanvas {
+  display: none;
+  .custom-ul li {
+    list-style: none;
+    margin: 0.7rem;
+  }
+  .custom-link-2 {
+    text-decoration: none;
+    color: $accent;
+    &:hover {
+      color: #007bff;
+    }
+  }
+  .custom-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown-content {
+    display: none;
+    background-color: #fff;
+    list-style: none;
+    border: $text-color 1px solid;
+    border-radius: 4px;
+    font-family: $secondary-font;
+    padding: 0.15rem;
+    font-size: 0.9rem;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .custom-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: #007bff;
+    }
+  }
+}
+
+.hero-section {
+  .profitable-business {
+    font-family: $primary-font;
+    color: $accent;
+  }
+  .dummy-text {
+    font-family: $accent-font;
+    color: $text-color;
+  }
+  .img-fluid {
+    margin-top: 1.3rem;
+  }
+}
+
+.imagine-features {
+  padding-top: 8rem;
+  .imagine-features-heading {
+    color: $accent;
+    font-family: "montserrat";
+  }
+  .imagine-features-paragraph {
+    font-size: 1rem;
+    line-height: 1.9rem;
+    color: $text-color;
+    font-family: "roboto-light";
+  }
+  .custom-card {
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 0rem 1.3rem 1.3rem 1.3rem;
+    margin-top: 5rem;
+    .fas {
+      color: $secondary-color;
+      background-color: $primary-color;
+      padding: 1.7rem;
+      border-radius: 100%;
+      margin-top: -10rem;
+      margin-bottom: 1.5rem;
+    }
+    .card-heading {
+      font-family: "roboto";
+      color: $accent;
+    }
+    .card-paragraph {
+      font-family: "roboto-light";
+      color: $text-color;
+      line-height: 1.9rem;
+      font-size: 1rem;
+      margin-top: 0.7rem;
+    }
+    .Learn-more {
+      text-decoration: none;
+    }
+  }
+}
+
+.communicate-container {
+  padding-top: 12rem;
+  overflow: hidden;
+  .communicate-heading {
+    font-family: "montserrat";
+    color: $accent;
+  }
+  .communicate-paragraph {
+    font-family: "roboto";
+    padding-top: 1.5rem;
+    line-height: 1.8rem;
+    color: $text-color;
+    font-size: 1rem;
+  }
+  .communicate-card {
+    margin-top: 2rem;
+    padding: 1.4rem;
+    background-color: $secondary-color;
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+    border-left: 10px solid $primary-color;
+    border-radius: 5px;
+    border-radius: 10px;
+    .person_4 {
+      border-radius: 100%;
+    }
+    .communicate-card-paragraph {
+      padding-top: 1.5rem;
+      font-size: 1rem;
+      color: $text-color;
+      font-family: "roboto-light-italic";
+      line-height: 1.8rem;
+    }
+  }
+}
+
+.about-us {
+  background-color: #f6f6f6;
+  padding: 4rem;
+  margin-top: 12rem;
+  .about-us-heading {
+    color: $accent;
+    font-family: "montserrat";
+  }
+  .about-us-paragraph {
+    font-family: "roboto";
+    color: $text-color;
+    line-height: 1.9rem;
+  }
+  .fa-check {
+    color: $primary-color;
+  }
+  .our-mission {
+    padding-left: 7rem;
+  }
+}
+
+.spacing {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.our-team-heading {
+  color: $accent;
+  font-family: "montserrat";
+}
+.our-team-paragraph {
+  font-family: "roboto-light";
+  color: $text-color;
+  font-size: 1rem;
+}
+
+.card {
+  border: none;
+  &:hover {
+    .card-image {
+      transform: scale(1.1);
+    }
+    .social-icons {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .our-team-card-heading {
+    font-family: "roboto";
+  }
+  .our-team-card-subtitle {
+    color: $primary-color;
+    font-family: "roboto";
+    letter-spacing: 0.1rem;
+    font-size: 0.75rem;
+  }
+  .card-text {
+    font-family: "roboto";
+    line-height: 1.8rem;
+    font-size: 0.85rem;
+    color: $text-color;
+  }
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  .card-image {
+    height: auto;
+    transition: transform 0.3s;
+  }
+  .social-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: $primary-color;
+    padding: 1.2rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .icon-link {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+  .modal-content {
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 2rem;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .fa-xmark {
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+}
+
+.testimonial {
+  padding: 4rem;
+  background-color: rgba(128, 128, 128, 0.1);
+  .slides-icon {
+    border: 2px solid $accent;
+    border-radius: 100%;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
+  .slide {
+    cursor: grabbing;
+    display: none;
+  }
+  .testimonial-heading {
+    color: $accent;
+    font-family: "montserrat";
+  }
+  .testimonial-paragraph {
+    font-family: "roboto";
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
+
+.news-container {
+  gap: 1.9rem;
+}
+
+.news-heading {
+  color: $text-color;
+  font-family: "roboto";
+  font-size: 0.9rem;
+}
+
+.date {
+  color: $text-color;
+  font-family: "roboto";
+  font-size: 0.9rem;
+}
+
+.news {
+  color: $primary-color;
+  font-family: "roboto";
+  font-size: 0.9rem;
+}
+
+.contact-us {
+  position: relative;
+  background-image: url(../assets/images/contact\ us.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 4rem 0rem 8rem 0rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(66, 133, 244, 0.5);
+  }
+  .contact-us-form {
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3rem;
+    border-radius: 5px;
+    position: relative;
+  }
+  .contact-us-heading {
+    z-index: 1;
+    color: $secondary-color;
+    font-family: "montserrat";
+  }
+  .form-heading {
+    font-family: "roboto";
+  }
+  .text-area {
+    border-radius: 4px;
+  }
+}
+
+footer {
+  box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
+  .copyright {
+    font-family: "roboto";
+    color: $text-color;
+  }
+  .colorlib {
+    color: $primary-color;
+    cursor: pointer;
+  }
+  .fa-brands {
+    cursor: pointer;
+    color: $primary-color;
+  }
+  .fa-heart {
+    color: maroon;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .spacing {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .navbar-toggler-icon {
+    display: block;
+  }
+
+  .offcanvas {
+    display: block;
+  }
+
+  .hero-section .container.d-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    .profitable-business {
+      margin-top: 3rem;
+    }
+    .dummy-text {
+      width: auto;
+    }
+  }
+
+  .imagine-features {
+    padding-top: 6rem;
+    .imagine-features-paragraph {
+      font-size: 1rem;
+      line-height: 1.9rem;
+      color: $text-color;
+      font-family: "roboto-light";
+      padding: 0rem;
+    }
+  }
+
+  .communicate-container {
+    padding-top: 9rem;
+    .communicate-heading {
+      font-size: 2rem;
+    }
+    .communicate-heading {
+      padding-top: 1.3rem;
+    }
+    .communicate-paragraph {
+      width: auto;
+      padding-top: 0.8rem;
+    }
+  }
+
+  .about-us {
+    padding: 3rem 1rem 0rem 1rem;
+    margin-top: 4rem;
+    .fa-check {
+      color: $primary-color;
+    }
+    .our-mission {
+      padding-left: 0rem;
+    }
+    .about-us-heading {
+      font-size: 2rem;
+    }
+  }
+
+  .our-team {
+    padding-top: 2.5rem;
+    .our-team-paragraph {
+      padding: 0rem;
+    }
+    .our-team-heading {
+      font-size: 2rem;
+    }
+  }
+
+  .testimonial {
+    padding: 4rem 0.5rem 4rem 0.5rem;
+    .testimonial-paragraph {
+      font-family: "roboto";
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+
+  .contact-us {
+    margin-top: 4rem;
+    padding: 3rem 0rem 6rem 0rem;
+    .contact-us-form {
+      padding: 3rem 1.3rem 3rem 1.3rem;
+      width: 100vw;
+    }
+    .contact-us-heading {
+      font-size: 2rem;
+    }
+  }
+
+  footer {
+    box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
+    .copyright {
+      font-family: "roboto";
+      color: $text-color;
+      padding: 1rem;
+    }
+  }
+
+  .custom-modal {
+    padding: 1.5rem;
+    .modal-content {
+      width: 100%;
+    }
+  }
+}
